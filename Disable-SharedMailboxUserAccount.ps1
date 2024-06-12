@@ -1,3 +1,27 @@
+<#
+.SYNOPSIS
+    Disable Microsoft 365 account of shared mailboxes
+
+.DESCRIPTION
+    This function helps IT administrators to disable all or specificed shared mailbox accounts in a Microsoft 365 tenant.
+    It helps keep disabled the accounts which are not supposed to login (as shared mailboxes are using delegated permissions directly from Exchange)
+
+.INPUTS
+    String
+
+.OUTPUTS
+    Array
+
+.EXAMPLE
+    Disable-SharedMailboxUserAccount
+
+.EXAMPLE
+    Disable-SharedMailboxUserAccount -Identity test.shared@contoso.com
+
+.NOTES
+    Website: https://github.com/nebiatek
+#>
+
 #Requires -Modules Microsoft.Graph.Authentication, Microsoft.Graph.Users, ExchangeOnlineManagement
 
 function Disable-SharedMailboxUserAccount {

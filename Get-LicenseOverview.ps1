@@ -22,6 +22,8 @@
 .NOTES
     Website: https://github.com/nebiatek
 #>
+
+#Requires -Modules Microsoft.Graph.Authentication
 function Get-LicenseOverview {
 
     [CmdletBinding()]
@@ -34,7 +36,6 @@ function Get-LicenseOverview {
     )
     
     begin {
-        
         $subscribedLicensesWithDisplayName = @()
     }
     
