@@ -13,7 +13,7 @@ $pnpAppClientId = Read-Host 'PnP App ClientId'
 
 $SiteURL = Read-Host 'Site Collection URL (ex.:"https://yourtenant.sharepoint.com/sites/YourSiteCollection/")'
 $ListTitle = Read-Host 'Document Library Name (ex.:"Documents")'
-$Scope = Read-Host 'Folder to scope (ex.:"/sites/YourSiteCollection/Documents/MyFolderToReset")
+$Scope = Read-Host 'Folder to scope (ex.:"/sites/YourSiteCollection/Documents/MyFolderToReset")'
 
 # Connect to PnP Online
 Connect-PnPOnline -Url $SiteURL -ClientId $pnpAppClientId -Interactive
